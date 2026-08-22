@@ -3,11 +3,9 @@
 <!-- ANIMATED WAVING HEADER -->
 <img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=200&section=header&text=G%20Venkata%20Sai%20Aasrith&fontSize=45&fontColor=fff&animation=twinkling&fontAlignY=30&desc=Where%20Intelligence%20Meets%20Hardware%20🧠⚡&descSize=20&descAlignY=52"/>
 
-<!-- 
-  🖼️ CUSTOM BANNER — Upload the generated banner image to your Aasrith1319 repo
-  and uncomment the line below, replacing the URL:
+
   <img width="100%" src="https://raw.githubusercontent.com/Aasrith1319/Aasrith1319/main/banner.jpg" alt="Banner"/>
--->
+
 
 <!-- PROFILE BADGES ROW -->
 <p>
