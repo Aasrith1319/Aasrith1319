@@ -43,7 +43,3 @@ jobs:
           # A calendar heat-map of your contributions
           plugin_isocalendar: yes
           plugin_isocalendar_duration: full-year
-
-          # Achievement highlights
-          plugin_achievements: yes
-          plugin_achievements_threshold: C
