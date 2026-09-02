@@ -29,7 +29,7 @@
 <p align="center">
   <a href="mailto:gaasrithtanvik.1319@gmail.com"><img src="https://img.shields.io/badge/Email-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="email" /></a>
   <!-- 👇 REPLACE YOUR-LINKEDIN-USERNAME 👇 -->
-  <a href="https://www.linkedin.com/in/https://www.linkedin.com/in/aasrith-g-1b15b428b/"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="linkedin" /></a>
+  <a href="https://www.linkedin.com/in/aasrith-g-1b15b428b/"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="linkedin" /></a>
   <a href="https://github.com/Aasrith1319"><img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" alt="github" /></a>
 </p>
 
