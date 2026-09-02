@@ -1,0 +1,49 @@
+# .github/workflows/metrics.yml
+# Generates a rich stats image (github-metrics.svg) and commits it to your
+# repo, so GitHub serves it directly — it NEVER rate-limits or shows broken.
+#
+# ONE-TIME SETUP (see the chat instructions):
+#   1. Create a classic Personal Access Token with scopes: repo + read:user
+#   2. Add it to this repo as a secret named  METRICS_TOKEN
+#   3. Add this file, then run the workflow once from the Actions tab.
+name: Metrics
+
+on:
+  schedule:
+    - cron: "0 */12 * * *"   # refresh every 12 hours
+  workflow_dispatch:          # lets you run it manually
+  push:
+    branches:
+      - main
+
+permissions:
+  contents: write
+
+jobs:
+  github-metrics:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Generate metrics
+        uses: lowlighter/metrics@latest
+        with:
+          token: ${{ secrets.METRICS_TOKEN }}
+          user: Aasrith1319
+          filename: github-metrics.svg
+          template: classic
+          base: header, activity, community, repositories, metadata
+          config_timezone: Asia/Kolkata
+
+          # Language breakdown
+          plugin_languages: yes
+          plugin_languages_analysis_timeout: 15
+          plugin_languages_details: bytes-size, percentage
+          plugin_languages_limit: 8
+
+          # A calendar heat-map of your contributions
+          plugin_isocalendar: yes
+          plugin_isocalendar_duration: full-year
+
+          # Achievement highlights
+          plugin_achievements: yes
+          plugin_achievements_threshold: C
